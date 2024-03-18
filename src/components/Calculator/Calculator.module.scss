@@ -1,0 +1,85 @@
+.calculator {
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  padding: 10px;
+
+  &__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #F0F0F0;
+    font-size: 32px;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  &__operations {
+    width: calc(100% - 10px);
+    background-color: #B7B7B7;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    &:first-child {
+      .calculator__button:nth-child(1),
+      .calculator__button:nth-child(2) {
+        background-color: #C2C2C2;
+        &:hover {
+          background-color: #D0D0D0
+        }
+      }
+    }
+    &:not(:first-child) {
+      .calculator__button:last-child {
+        background-color: #C2C2C2;
+        &:hover {
+          background-color: #D0D0D0
+        }
+      }
+    }
+    &:last-child {
+      .calculator__button:nth-child(3) {
+        background-color: #A0B6E0;
+        &:hover {
+          background-color: #B7CAF0
+        }
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    font-size: 28px;
+    padding: 13px 0px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: #EFEFEF
+    }
+
+    &_delete {
+      width: 110px;
+      background-color: #F49A9A;
+      color: white;
+
+      &:hover {
+        background-color: #E88484
+      }
+    }
+    &_equals {
+      background-color: #A0B6E0;
+
+    }
+  }
+}

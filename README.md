@@ -1,6 +1,10 @@
-# About The Project
+# About the project Security
 
-Link - <a>https://nert1n.github.io/???/</a>
+<h3><a href='https://nert1n.github.io/security-number-game/'>Site link</a></h3>
+<h3><a href='https://imgur.com/a/nRptEmq'>Model link</a></h3>
 
-Технології котрі я використовував:
-* ???
+The technologies I used:
+* HTML/SCSS
+* JavaScript
+* React
+* react-router 

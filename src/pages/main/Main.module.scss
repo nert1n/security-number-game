@@ -1,0 +1,14 @@
+.main {
+  &__holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    &_profile {
+      margin-bottom: 40px;
+    }
+  }
+  &__center {}
+  &__right {}
+}
