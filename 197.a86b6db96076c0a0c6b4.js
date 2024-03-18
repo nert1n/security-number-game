@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksecurity_number_game=self.webpackChunksecurity_number_game||[]).push([[197],{197:(e,r,s)=>{s.r(r),s.d(r,{default:()=>c});var a=s(848);function c(){return(0,a.jsx)("div",{className:"error",children:(0,a.jsx)("div",{className:"container",children:(0,a.jsx)("div",{className:"error__holder",children:"Error"})})})}}}]);
+//# sourceMappingURL=197.a86b6db96076c0a0c6b4.js.map
