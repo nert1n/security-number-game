@@ -15,17 +15,26 @@ function Calculator() {
   }
 
   function number(e: any) {
+    if (summa != '0') {
+      setSumma(summa + e.target.innerText)
+    } else {
+      setSumma(e.target.innerText)
+    }
     setOperation(false)
-    setSumma(summa + e.target.innerText)
   }
 
-  function deleteLatest(e: any) {
+  function deleteLatest() {
     arraySumma.splice(-1, 1);
     setSumma(arraySumma.join(''))
   }
 
   function equals() {
-    setSumma(eval(summa).toString())
+    if (!operation) {
+      setSumma(eval(summa).toString())
+    } else {
+      deleteLatest()
+      setOperation(false)
+    }
   }
 
   return (
@@ -33,8 +42,8 @@ function Calculator() {
       <p className={cl.calculator__input}>{summa}</p>
       <div className={cl.calculator__operations}>
         <div className={cl.calculator__num}>
-          <button className={cl.calculator__button} onClick={number}>(</button>
-          <button className={cl.calculator__button} onClick={number}>)</button>
+          <button className={cl.calculator__button}>(</button>
+          <button className={cl.calculator__button}>)</button>
           <button className={`${cl.calculator__button} ${cl.calculator__button_delete}`} onClick={deleteLatest}>delete</button>
         </div>
         <div className={cl.calculator__num}>

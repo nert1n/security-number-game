@@ -3,7 +3,7 @@ import { LazyError } from '@/pages/error/Error.lazy';
 
 export const publicRoutes = [
   {
-    path: '/',
+    path: '*',
     component: <LazyMain  />,
   },
   {

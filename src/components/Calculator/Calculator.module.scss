@@ -6,13 +6,17 @@
   &__input {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     height: 60px;
+    max-width: 250px;
     background-color: #F0F0F0;
     font-size: 32px;
     font-weight: 500;
     border-radius: 15px;
+    padding: 10px;
     margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
   }
   &__operations {
     width: calc(100% - 10px);

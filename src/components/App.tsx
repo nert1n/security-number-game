@@ -3,10 +3,12 @@ import Footer from '@/components/UI/Footer/Footer';
 import Header from '@/components/UI/Header/Header';
 import { publicRoutes } from '@/router/index';
 import { Suspense } from 'react';
+import { Provider } from 'react-redux';
+import { store } from '@/redux/store';
 
 export function App() {
     return (
-        <>
+        <Provider store={store}>
             <Header/>
               <div className='response'>
                 <Routes>
@@ -20,7 +22,7 @@ export function App() {
                 </Routes>
               </div>
             <Footer/>
-        </>
+        </Provider>
     )
 }
 
