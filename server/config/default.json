@@ -1,0 +1,5 @@
+{
+  "serverPort": 4000,
+  "dbUrl": "mongodb+srv://security_db:1234567890@cloud-security.bd9gz11.mongodb.net/?retryWrites=true&w=majority&appName=cloud-security",
+  "secretKey": "mern-secret-key"
+}

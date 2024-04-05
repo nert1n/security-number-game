@@ -4,6 +4,8 @@ import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { StrictMode } from 'react';
 import '@/styles/style.scss';
 import { publicRoutes } from '@/router';
+import { Provider } from 'react-redux';
+import { store } from '@/redux/store';
 
 const root = document.getElementById('root');
 
@@ -21,4 +23,4 @@ const router = createHashRouter([
     }
 ])
 
-container.render(<RouterProvider router={router} />);
+container.render(<Provider store={store}><RouterProvider router={router} /></Provider>);

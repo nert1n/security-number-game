@@ -2,10 +2,11 @@ import cl from './ProfileCard.module.scss';
 import img from '@/assets/img/moon.jpg';
 import question from '@/assets/img/question.png';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks/hooks';
-import { isAuth } from '@/redux/slices/userSlice';
+import { log_out } from '@/redux/slices/userSlice';
+import { Link } from 'react-router-dom';
 
 function ProfileCard() {
-  const isLogin = useAppSelector((state) => state.user.value)
+  const isLogin = useAppSelector((state) => state.user.auth)
   const dispatch = useAppDispatch()
 
   return (
@@ -16,9 +17,10 @@ function ProfileCard() {
           <p className={cl.card__name}>{isLogin ? 'nert1n' : 'Guest'}</p>
           <p className={cl.card__level}>{isLogin ? '1' : '0'} lvl</p>
         </div>
-        <button className={cl.card__exit} onClick={() => {dispatch(isAuth())}}>
-          {isLogin ? 'Log out' : 'Log in'}
-        </button>
+          {isLogin
+            ? <button className={cl.card__exit} onClick={() => {dispatch(log_out())}}>Log out</button>
+            : <Link className={cl.card__exit} to={'/login'}>Log in</Link>
+          }
       </div>
     </div>
   );
