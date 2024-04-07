@@ -1,15 +1,56 @@
 {
   "name": "security-number-game",
-  "version": "0.1.0",
-  "description": "Game",
+  "version": "0.1.1",
+  "description": "This is a simple numbers game on react",
   "main": "index.js",
+  "private": false,
+  "homepage": "https://nert1n.github.io/security-number-game/",
   "scripts": {
     "start:client": "cd client && npm run start",
     "start:server": "cd server && npm run start",
     "start:both": "concurrently \"npm run start:client\" \"npm run start:server\""
   },
-  "author": "nert1n",
-  "license": "ISC",
+  "author": {
+    "name": "nert1n",
+    "email": "dymufa@gmail.com",
+    "url": "https://github.com/nert1n/"
+  },
+  "contributors": [
+    {
+      "name": "nert1n",
+      "email": "dymufa@gmail.com",
+      "url": "https://github.com/nert1n/"
+    }
+  ],
+  "bugs": "https://github.com/nert1n/security-number-game/issues",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "javascript",
+    "webpack",
+    "calculator",
+    "calculator game"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nert1n/security-number-game.git"
+  },
+  "engines": {
+    "node": ">= 20.0.0",
+    "npm": ">= 9.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
