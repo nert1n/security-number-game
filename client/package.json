@@ -1,6 +1,6 @@
 {
   "name": "security-number-game",
-  "version": "0.0.1",
+  "version": "0.1",
   "description": "Security number game",
   "homepage": "https://nert1n.github.io/security-number-game/",
   "main": "index.js",

@@ -6,14 +6,16 @@ interface userState {
   name: string,
   surname: string,
   email: string,
+  rank: number,
   age: number
 }
 
 const initialState: userState = {
   auth: false,
-  name: 'None',
+  name: 'Guest',
   surname: 'None',
-  email: 'None',
+  email: 'none.com',
+  rank: 0,
   age: 0
 }
 
@@ -27,6 +29,7 @@ export const userState = createSlice({
     },
     log_out: (state, action: PayloadAction<boolean>) => {
       localStorage.removeItem('token')
+      state.email = 'none.com'
       state.auth = false
     },
   },

@@ -1,13 +1,25 @@
 .footer {
-  background-color: #D9D9D9;
+  background-color: #212121;
+  box-shadow: 0px -5px 5px #00000020;
 
   &__holder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 0px;
+    padding: 8px 0px;
     margin-top: 20px;
+    a {
+      color: #00FF48;
+      &:hover {
+        color: #5CFF89;
+      }
+      &:active,
+      &:focus {
+        color: #B7FFCB;
+      }
+    }
   }
 }

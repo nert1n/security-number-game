@@ -1,4 +1,3 @@
-import ProfileCard from '@/components/ProfileCard/ProfileCard';
 import cl from './Main.module.scss';
 import SwitchMode from '@/components/SwitchMode/SwitchMode';
 import Calculator from '@/components/Calculator/Calculator';
@@ -9,7 +8,7 @@ export default function Main() {
             <div className='container'>
                 <div className={cl.main__holder}>
                   <div className={cl.main__left}>
-                    <div className={cl.main__left_profile}><ProfileCard/></div>
+                    <div className={cl.main__left_profile}></div>
                     <SwitchMode/>
                   </div>
                   <div className={cl.main__center}>

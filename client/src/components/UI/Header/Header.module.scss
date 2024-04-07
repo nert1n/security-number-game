@@ -1,15 +1,44 @@
 .header {
-  background-color: #D9D9D9;
+  background-color: #212121;
+  box-shadow: 0px 5px 5px #00000020;
 
   &__holder {
-    padding: 10px 0px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+    margin-bottom: 32px;
   }
   &__name {
-    font-size: 24px;
-    font-weight: 500;
-    a {
-      color: black;
+    svg {
+      width: 85px;
+      height: 26px;
+      color: #00FF48;
+      &:hover {
+        color: #5CFF89;
+      }
+      &:active,
+      &:focus  {
+        color: #B7FFCB;
+      }
+    }
+  }
+  &__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    &:hover {
+      background-color: #ffffff99;
+    }
+    &:active,
+    &:focus {
+      background-color: #ffffff50;
     }
   }
 }

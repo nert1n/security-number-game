@@ -1,0 +1,157 @@
+.profile {
+  &__holder {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  &__card,
+  &__achievements,
+  &__rank {
+    min-height: 100px;
+    background-color: #ffffff10;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_full {
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 60px;
+    border-radius: 50%;
+    margin-right: 24px;
+  }
+
+  &__name {}
+
+  &__email {}
+
+  &__age {}
+
+  &__password {}
+
+  &__auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FF48;
+    color: #000000;
+    border-radius: 5px;
+    padding: 8px 24px;
+
+    &:hover {
+      background-color: #5CFF89;
+    }
+
+    &:active,
+    &:focus  {
+      background-color: #B7FFCB;
+    }
+  }
+
+  &__achievements {
+    &_holder {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    width: min-content;
+    font-size: 20px;
+    margin: 0 auto 12px auto;
+  }
+
+  &__achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #ffffff30;
+    border-radius: 5px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      background-color: #ffffff40;
+    }
+
+    &.active {
+      background-color: #B7FFCB;
+      color: #000000;
+
+      &:hover {
+        background-color: #5CFF89;
+      }
+    }
+  }
+
+  &__rank {
+    &_holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_info {
+      p:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &__cicle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    outline: 17px solid black;
+    outline-offset: 7px;
+    border-radius: 50%;
+    margin: 30px 48px 30px 0;
+  }
+
+  &__level {}
+
+  &__time {
+    &_least {}
+  }
+
+  &__steps {
+    &_least {}
+  }
+
+  &__next {
+    width: max-content;
+    margin: 0 auto;
+  }
+}

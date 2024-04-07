@@ -1,38 +1,146 @@
 .auth {
-  margin-top: 25vh;
+  padding-top: 3vh;
 
   &__holder {
-    width: 200px;
-    background-color: gray;
-    border-radius: 5px;
-    padding: 10px;
+    width: 375px;
+    background-color: #ffffff10;
+    border-radius: 10px;
+    padding: 28px;
     margin: 0 auto;
   }
 
   &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &__google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff25;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 12px;
+    transition: all 0.1s linear;
+
+    svg {
+      font-size: 20px;
+      margin-right: 12px;
+    }
+
+    &:hover {
+      background-color: #ffffff35;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #ffffff45;
+    }
+  }
+
+  &__or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 24px 0px;
   }
 
   &__inputs {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
   }
 
   &__input {
     width: 100%;
-    border-radius: 3px;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff15;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px;
+    transition: all 0.1s linear;
 
     &:not(:last-child) {
-      margin-bottom: 5px;
+      margin-bottom: 16px;
+    }
+
+    &:hover {
+      background-color: #ffffff25;
+    }
+
+    &:focus {
+      background-color: #ffffff35;
+    }
+  }
+
+  &__password &__input {
+    margin-bottom: 4px;
+  }
+
+  &__recovery {
+    color: #ffffffC9;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    &:hover {
+      color: #ffffffAA;
+    }
+
+    &:active,
+    &:focus {
+      color: #ffffff90;
     }
   }
 
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    border-radius: 3px;
-    padding: 8px;
+    border-radius: 5px;
+    background-color: #05FF0035;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px;
+    margin-bottom: 24px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      background-color: #05FF0045;
+    }
+    &:active,
+    &:focus {
+      background-color: #05FF0055;
+    }
+  }
+
+  &__account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffC9;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      color: #ffffffAA;
+    }
+    &:active,
+    &:focus {
+      color: #ffffff90;
+    }
   }
 }
