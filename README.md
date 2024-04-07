@@ -22,22 +22,24 @@
   </a>
 </p>
 
-<h2 align="center"><a target='__blank' href='https://nert1n.github.io/security-number-game/'>Site link</a>  -  <a target='__blank' href='https://www.figma.com/file/NDm3m1PeprTd8IslmiKe2p/Security(react-project)?type=design&node-id=59%3A482&mode=design&t=sas1Fhvv2fxbl6EY-1'>Figma link</a></h3>
+<p align="center"><a target='__blank' href='https://nert1n.github.io/security-number-game/'>Site link</a>  -  <a target='__blank' href='https://www.figma.com/file/NDm3m1PeprTd8IslmiKe2p/Security(react-project)?type=design&node-id=59%3A482&mode=design&t=sas1Fhvv2fxbl6EY-1'>Figma link</a></p>
 
 
 
 <h3 align="center">Technologies Client</h2>
-* HTML/SCSS
-* TypeScript
-* React
-* Webpack
-* axios
-* react-router
-* react-redux
+
+- HTML/SCSS
+- TypeScript
+- React
+- Webpack
+- axios
+- react-router
+- react-redux
 
 <h3 align="center">Technologies Server</h2>
-* JavaScript
-* express
-* mongoose
-* nodemon
-* JWT
+
+- JavaScript
+- express
+- mongoose
+- nodemon
+- JWT
