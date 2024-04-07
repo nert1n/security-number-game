@@ -1,0 +1,16 @@
+{
+  "name": "security-number-game",
+  "version": "0.1.0",
+  "description": "Game",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "cd client && npm run start",
+    "start:server": "cd server && npm run start",
+    "start:both": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "author": "nert1n",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
