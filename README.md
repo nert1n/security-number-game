@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Primer logo" width="300px" src="client/public/favicon.svg">
+  <img alt="Security logo" width="300px" src="client/public/favicon.svg">
 </p>
 
 <h1 align="center">Security game React</h1>
@@ -26,7 +26,7 @@
 
 
 
-<h3 align="center">Technologies Client</h2>
+<h3 align="center">Technologies Client:</h2>
 
 - HTML/SCSS
 - TypeScript
@@ -36,10 +36,14 @@
 - react-router
 - react-redux
 
-<h3 align="center">Technologies Server</h2>
+<h3 align="center">Technologies Server:</h2>
 
 - JavaScript
 - express
 - mongoose
 - nodemon
 - JWT
+
+<h3 align="center">Fonts:</h2>
+
+- Lato
