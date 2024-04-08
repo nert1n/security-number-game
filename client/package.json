@@ -1,9 +1,9 @@
 {
   "name": "client",
   "version": "0.1.1",
-  "description": "This is a client on React",
   "main": "index.js",
   "private": false,
+  "homepage": ".",
   "scripts": {
     "start": "webpack serve --env mode=development",
     "build:dev": "webpack --env mode=development",
@@ -12,7 +12,6 @@
     "predeploy": "npm run build:prod",
     "deploy": "gh-pages -d build"
   },
-  "keywords": [],
   "author": {
     "name": "nert1n",
     "email": "dymufa@gmail.com",
@@ -27,29 +26,6 @@
   ],
   "bugs": "https://github.com/nert1n/security-number-game/issues",
   "license": "MIT",
-  "keywords": [
-    "react",
-    "javascript",
-    "webpack",
-    "calculator",
-    "calculator game"
-  ],
-  "engines": {
-    "node": ">= 20.0.0",
-    "npm": ">= 9.0.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.2",
     "axios": "^1.6.8",
